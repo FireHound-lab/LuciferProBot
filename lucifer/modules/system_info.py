@@ -34,7 +34,7 @@ def status(update, context):
 	chat = update.effective_chat
 	
 	stat = "--- System Status ---\n"
-	stat += "lucifer Version: `5.5.2`""\n"
+	stat += "Bhabhiji Version: `5.5.2`""\n"
 	stat += "Python Version: `"+python_version()+"`\n"
 	stat += "GitHub API Version: `"+str(git.vercheck())+"`\n"
 	#Software Info
