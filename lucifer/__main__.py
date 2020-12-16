@@ -150,7 +150,7 @@ def start(update, context):
         else:
             update.effective_message.reply_video(HELP_PANEL_STRING.lucifer_GIF, reply_markup=InlineKeyboardMarkup(BUTTONS_START), parse_mode=ParseMode.MARKDOWN)
     else:
-        update.effective_message.reply_text("Yo, whadup? 🙂")
+        update.effective_message.reply_text("Halo Bsdiwale ? 🙂")
     
 
 def m_connect_button(update, context):
@@ -249,7 +249,7 @@ def get_help(update, context):
         update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
                                             reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="Help",url="t.me/{}?start=help".format(context.bot.username)),
-                                                InlineKeyboardButton(text="👥 Support chat.",url="https://telegram.dog/LuciferProBotSupport")]]))
+                                                InlineKeyboardButton(text="👥 Go here plox.",url="https://google.com")]]))
         return
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
@@ -413,9 +413,9 @@ def source(update, context):
         try:
             context.bot.send_message(user.id, SOURCE_STRING, parse_mode=ParseMode.MARKDOWN)
 
-            update.effective_message.reply_text("You'll find in PM more info about my sourcecode.")
+            update.effective_message.reply_text("No sourcecode for u , sorry !!.")
         except Unauthorized:
-            update.effective_message.reply_text("Contact me in PM first to get source information.")
+            update.effective_message.reply_text("No sourcecode for u , sorry !!!.")
             
             
 @run_async
